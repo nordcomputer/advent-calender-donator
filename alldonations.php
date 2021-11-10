@@ -19,7 +19,7 @@ foreach (scandir($directory) as $orgafile) {
 
 foreach ($donate as $organisation => $betrag) {
     if ($betrag!=0) {
-        echo "<span class='orgadonation'><b>".$organisation."</b>: ".$betrag."€</span><br>";
+        echo "<span class='orgadonation'><b>".$organisation.":</b> ".$betrag."€</span><br>";
     }
 }
 ?>

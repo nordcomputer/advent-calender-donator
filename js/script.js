@@ -37,5 +37,15 @@ $( function() {
           $("#responseoverlay").removeClass('active');
       }
   });
+  $(".tuerchen3").click(function(){
+    $( ".tuerchen3" ).toggle( "slide" );
+    setTimeout(
+      function()
+      {
+          $( ".behindthedoor" ).toggle( "slide" );  //do something special
+      }, 500);
+
+
+  })
 
 });

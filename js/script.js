@@ -17,11 +17,10 @@ $( function() {
            });
       $("#calculate").load("alldonations.php");
       $("#response").addClass("active");
+      $("#responseoverlay").addClass('active');
   });
   $('fieldset').bind('DOMSubtreeModified', function(){
       var ownorgachecked = $('.own').prop('checked');
-      console.log(ownorgachecked);
-
       if (ownorgachecked==true) {
         $('#freetext').prop('disabled', false);
       } else {
@@ -30,6 +29,13 @@ $( function() {
   });
   $("#closeresponse").click(function(){
       $("#response").removeClass('active');
+      $("#responseoverlay").removeClass('active');
+  });
+  $(".overlay").click(function(e){
+      if($(e.target).attr('id')=="responseoverlay") {
+          $("#response").removeClass('active');
+          $("#responseoverlay").removeClass('active');
+      }
   });
 
 });

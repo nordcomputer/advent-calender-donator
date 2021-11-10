@@ -66,10 +66,10 @@ if(!isset($_SESSION['user'])) {
             <?php } ?>
           </fieldset>
 
-          <input type="submit" name="submit" id="submit"/>
+          <p><input type="submit" name="submit" value="Speichern" id="submit"/></p>
         </form>
         <div id="calculate"><?php include_once("alldonations.php"); ?></div>
     </div>
-    <div id="response"></div>
+    <div class="overlay" id="responseoverlay"><div class="response" id="response"></div></div>
   </body>
 </html>

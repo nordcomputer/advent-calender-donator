@@ -21,8 +21,9 @@ if ($_POST) {
   $fh = fopen($newfile, 'w') or die("Can't create file");
   file_put_contents($newfile, $contents);
 
-  echo "<div class='saved'>In Ordnung - dein Advents-Euro wird an folgende Stelle gespendet:<br><b>".$organisation."</b></div>";
-  echo "<div class='afterdonationsdone'>Sobald alle Spenden getätigt sind, kannst du hier wieder vorbeischauen und nachsehen, wohin die ganzen Spenden gegangen sind.</div>";
+  echo "<div class='saved'><p>In Ordnung - dein Advents-Euro wird an folgende Stelle gespendet:<br><span class='orgadonation'><b>".$organisation."</b></span></p></div>";
+  echo "<div class='afterdonationsdone'><p>Du kannst hier immer wieder herkommen und nachsehen, wie der aktuelle Stand ist.</p>";
+  echo "<p>Außerdem hast du bis Heiligabend Zeit, deine Meinung noch einmal zu ändern (wenn du möchtest). Heiligabend wird der Kalender dann alle Spenden vornehmen. :)</p></div>";
   echo "<button id='closeresponse'>OK</button>";
 }
 

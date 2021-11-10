@@ -2,7 +2,7 @@ body {
   color:darkblue;
 }
 #background {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -10,6 +10,7 @@ body {
   left: 0;
   z-index: -1;
   background: url("../img/presents.jpg");
+  background-size:cover;
   filter: blur(0.2em);
 }
 
@@ -32,9 +33,16 @@ body {
   border: 0px;
   box-shadow: 0px 0px 10px #000;
   border-radius: 15px;
+  max-width: 400px;
 }
 #response.active {
   top:5%;
+}
+fieldset {
+  text-align: center;
+}
+.ui-checkboxradio-icon {
+    display: none;
 }
 
 #response {
@@ -67,6 +75,58 @@ body {
 label {
   margin: .3em auto;
   width: 20%;
-  min-width: 200px;
+  min-width: 230px;
   font-weight: bold !important;
+  border-radius: 15px !important;
+}
+
+.orgaspan {
+    max-width: 90%;
+    display: inline-block;
+}
+
+.fa.fa-heart {
+    float: right;
+    top: 0;
+    position: relative;
+    margin-top: 0;
+    display:none;
+}
+
+label.ui-state-active .fa.fa-heart {
+  display:inline-block;
+  color:red;
+}
+
+.orgadonation {
+  background: #fff;
+  box-shadow: 0px 0px 3px lightgray;
+  padding: 1% 3%;
+  border-radius: 15px;
+  height: auto;
+  display: inline-block;
+  margin: 1% 0;
+}
+
+.explaination {
+    display: inline-block;
+    width: 92%;
+    margin: auto 1%;
+    margin-bottom:1%;
+    vertical-align: top;
+    height: 100%;
+    padding: 1%;
+    text-align: center;
+    background: #ffffffb3;
+    border: 0px;
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1000px) {
+  #calculate, #orgachooser {
+    width: 100%;
+    margin-top:3%;
+  }
 }

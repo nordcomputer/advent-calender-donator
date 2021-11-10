@@ -3,7 +3,6 @@
 include_once("organisations.php");
 $directory="donations";
 $anzahl=count(scandir($directory))-2;
-echo "<h3>(Bisher haben sich schon ".$anzahl." von euch entschieden)</h3>";
 $calculated=[];
 
 foreach (scandir($directory) as $orgafile) {
@@ -12,11 +11,15 @@ foreach (scandir($directory) as $orgafile) {
         if (!isset($donate[$content])) {
             $donate[$content]=0;
         }
-        $donate[$content]=$donate[$content]+1;
+        if ($content!=""){
+            $donate[$content]=$donate[$content]+1;
+        }
     }
 }
 
 foreach ($donate as $organisation => $betrag) {
-    echo "<b>".$organisation."</b>: ".$betrag."€<br>";
+    if ($betrag!=0) {
+        echo "<span class='orgadonation'><b>".$organisation."</b>: ".$betrag."€</span><br>";
+    }
 }
 ?>

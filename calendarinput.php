@@ -26,12 +26,12 @@ if(!isset($_SESSION['user'])) {
           include_once("organisations.php");
           foreach ($organisations as $id => $organisation) {
               echo "<label for='radio-$id'>$organisation</label>";
-              echo "<input class='radio' type='radio' value ='$organisation' name='organisation' id='radio-$id'>";
+              echo "<input class='radio' type='radio' value ='$organisation' name='organisation' id='radio-$id'><br>";
           }
 
           ?>
           <label for="radio-<?php echo count($organisations)+1;?>">Eigene Organistation angeben</label>
-          <input class="radio" type="radio" value ="own" name="organisation" id="radio-<?php echo count($organisations)+1;?>">
+          <input class="radio own" type="radio" value ="own" name="organisation" id="radio-<?php echo count($organisations)+1;?>"><br>
             <textarea id="freetext" name="freetext" rows="4" cols="50" disabled></textarea>
       </fieldset>
 

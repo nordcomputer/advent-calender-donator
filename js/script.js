@@ -18,7 +18,7 @@ $( function() {
       $("#calculate").load("alldonations.php");
   });
   $('fieldset').bind('DOMSubtreeModified', function(){
-      var ownorgachecked = $('#radio-4').prop('checked');
+      var ownorgachecked = $('.own').prop('checked');
       console.log(ownorgachecked);
 
       if (ownorgachecked==true) {

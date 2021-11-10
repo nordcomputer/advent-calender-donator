@@ -16,6 +16,7 @@ $( function() {
              }
            });
       $("#calculate").load("alldonations.php");
+      $("#response").addClass("active");
   });
   $('fieldset').bind('DOMSubtreeModified', function(){
       var ownorgachecked = $('.own').prop('checked');
@@ -27,4 +28,8 @@ $( function() {
         $('#freetext').prop('disabled', true);
       }
   });
+  $("#closeresponse").click(function(){
+      $("#response").removeClass('active');
+  });
+
 });

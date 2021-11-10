@@ -6,6 +6,7 @@ if(!isset($_SESSION['user']) || !isset($_POST)) {
 }
 
 if ($_POST) {
+  echo '<script src="js/script.js"></script>';
   $organisation=$_POST['organisation'];
   if ($organisation=="own") {
     $organisation=$_POST['freetext'];
@@ -22,6 +23,7 @@ if ($_POST) {
 
   echo "<div class='saved'>In Ordnung - dein Advents-Euro wird an folgende Stelle gespendet:<br><b>".$organisation."</b></div>";
   echo "<div class='afterdonationsdone'>Sobald alle Spenden getätigt sind, kannst du hier wieder vorbeischauen und nachsehen, wohin die ganzen Spenden gegangen sind.</div>";
+  echo "<button id='closeresponse'>OK</button>";
 }
 
 ?>

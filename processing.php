@@ -10,8 +10,13 @@ if ($_POST) {
   if ($organisation=="own") {
     $organisation=$_POST['freetext'];
   }
-  $contents=$_SESSION['user'].": ".$organisation;
-  $newfile="donations/".$_SESSION['user'].".txt";
+
+  $dir="donations";
+  $contents=$organisation;
+  $newfile=$dir."/".$_SESSION['user'].".txt";
+  if (!file_exists($newfile)) {
+      touch($newfile);
+  }
   $fh = fopen($newfile, 'w') or die("Can't create file");
   file_put_contents($newfile, $contents);
 

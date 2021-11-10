@@ -15,6 +15,7 @@ $( function() {
                  $('#response').html(data); // show response from the php script.
              }
            });
+      $("#calculate").load("alldonations.php");
   });
   $('fieldset').bind('DOMSubtreeModified', function(){
       var ownorgachecked = $('#radio-4').prop('checked');

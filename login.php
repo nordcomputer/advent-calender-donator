@@ -6,6 +6,7 @@
         <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
         <script src="js/script.js"></script>
         <link rel="stylesheet" href="css/style.css">
+        <title>Adventskalender-Gruppenspender</title>
     </head>
     <body class="login">
       <div id="background"></div>

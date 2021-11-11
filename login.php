@@ -21,7 +21,7 @@
             </div>
             <div class="is-relative">
               <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-              <input type="password" placeholder="Passwort" name="password">
+              <input type="password" placeholder="Passwort" id="passwordinput" name="password"> <i class="pshow fa fa-eye" aria-hidden="true"></i>
               <!-- <label for="password">Passwort eingeben</label> -->
             </div>
             <input class="loginbutton" type="submit" value="Einloggen"/>

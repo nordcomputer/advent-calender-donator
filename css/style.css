@@ -207,6 +207,11 @@ body.login {
 .tuerchen3.active {
   display: flex;
 }
+
+.pshow {
+  cursor:pointer;
+}
+
 @media screen and (max-width:1000px) {
   #calculate, #orgachooser, #loginform {
     max-width: 100%;

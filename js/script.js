@@ -48,4 +48,23 @@ $( function() {
 
   })
 
+  $('.pshow').mousedown(function () {
+      $('#passwordinput')[0].type = 'text';
+    timeout = setInterval(function () {
+      $('#passwordinput')[0].type = 'text';
+    }, 500);
+
+    return false;
+  });
+  $('.pshow').mouseup(function () {
+    $('#passwordinput')[0].type = 'password';
+    clearInterval(timeout);
+    return false;
+  });
+  $('.pshow').mouseout(function () {
+    $('#passwordinput')[0].type = 'password';
+    clearInterval(timeout);
+    return false;
+  });
+
 });

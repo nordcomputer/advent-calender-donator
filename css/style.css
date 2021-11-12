@@ -252,6 +252,10 @@ body.login {
       height: 3em;
   }
 
+  .pshow {
+    opacity: 0;
+  }
+
   .loginbutton {
     margin-left: -1% !important;
   }

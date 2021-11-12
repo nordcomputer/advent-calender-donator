@@ -217,4 +217,24 @@ body.login {
     max-width: 100%;
     margin-top:3%;
   }
+
+  .tuerchen3 {
+    max-width: 100%;
+    width: 95vw;
+    height: 65vw;
+  }
+
+  .tuerchentext {
+    font-size: 13vw;
+  }
+  
+  .explaination {
+    width: 90%;
+    font-size:80%;
+    padding:3%;
+  }
+
+  #response {
+    font-size: 80%;
+  }
 }

@@ -10,6 +10,7 @@ if(!isset($_SESSION['user'])) {
   <head>
     <meta charset="utf-8">
     <title>Adventskalender Spendenaktion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
 

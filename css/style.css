@@ -169,7 +169,7 @@ body.login {
   font-weight: bold;
   margin: auto;
   margin-top: 5%;
-  display: block;
+  display: inline-block;
 }
 
 
@@ -212,6 +212,10 @@ body.login {
   cursor:pointer;
 }
 
+.phide {
+  opacity:0;
+}
+
 @media screen and (max-width:1000px) {
   #calculate, #orgachooser, #loginform {
     max-width: 100%;
@@ -237,4 +241,19 @@ body.login {
   #response {
     font-size: 80%;
   }
+
+  .login input {
+    text-align: center;
+  }
+  .login input {
+      width: 85%;
+      margin: auto;
+      float: none;
+      height: 3em;
+  }
+
+  .loginbutton {
+    margin-left: -1% !important;
+  }
+
 }

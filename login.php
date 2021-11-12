@@ -25,10 +25,12 @@
               <input type="password" placeholder="Passwort" id="passwordinput" name="password"> <i class="pshow fa fa-eye" aria-hidden="true"></i>
               <!-- <label for="password">Passwort eingeben</label> -->
             </div>
-            <input class="loginbutton" type="submit" value="Einloggen"/>
-            <?php if (!empty($_POST)) {?>
-              <div class="errormessage">Unbekannte Benutzername/Passwort Kombination</div>
-            <?php } ?>
+            <div class="is-relative">
+                <i class="phide pshow fa fa-eye" aria-hidden="true"></i> <input class="loginbutton" type="submit" value="Einloggen"/> <i class="phide pshow fa fa-eye" aria-hidden="true"></i>
+                <?php if (!empty($_POST)) {?>
+                  <div class="errormessage">Unbekannte Benutzername/Passwort Kombination</div>
+                <?php } ?>
+            </div>
         </div>
       </form>
 

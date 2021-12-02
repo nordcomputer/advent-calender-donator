@@ -15,7 +15,7 @@ $( function() {
                  $('#response').html(data); // show response from the php script.
              }
            });
-      $("#calculate").load("alldonations.php");
+      
       $("#response").addClass("active");
       $("#responseoverlay").addClass('active');
   });
@@ -30,11 +30,13 @@ $( function() {
   $("#closeresponse").click(function(){
       $("#response").removeClass('active');
       $("#responseoverlay").removeClass('active');
+      $("#calculate").load("alldonations.php");
   });
   $(".overlay").click(function(e){
       if($(e.target).attr('id')=="responseoverlay") {
           $("#response").removeClass('active');
           $("#responseoverlay").removeClass('active');
+          $("#calculate").load("alldonations.php");
       }
   });
   $(".tuerchen3").click(function(){

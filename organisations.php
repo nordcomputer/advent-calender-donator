@@ -7,4 +7,6 @@ $organisations[3]="NABU";
 $organisations[4]="Sea Shepherd";
 $organisations[5]="Aktion Deutschland Hilft";
 $organisations[6]="BUND";
+$organisations[7]="European Digital Rights (EDRi)";
+$organisations[8]="Deutsche Gesellschaft zur Rettung Schiffbrüchiger";
 ?>

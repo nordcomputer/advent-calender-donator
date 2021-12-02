@@ -216,6 +216,13 @@ body.login {
   opacity:0;
 }
 
+.license {
+  right: 1%;
+  position: relative;
+  float: right;
+  margin-top: 10%;
+}
+
 @media screen and (max-width:1000px) {
   #calculate, #orgachooser, #loginform {
     max-width: 100%;

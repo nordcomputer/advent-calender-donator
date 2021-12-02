@@ -17,6 +17,7 @@ Es wird ein laufender PHP Server benötigt
 
 ## Installation
 - Klone diese Repository auf deinen Webserver:
+
 `git clone git@github.com:nordcomputer/advent-calender-donator.git .`
 oder lade sie herunter und speichere sie mit einem FTP Programm auf dem Server.
 - Kopiere die Datei `restricted/sample-passwords.php`nach `restricted/passwords.php` und erstelle für jeden Gruppenteilnehmer 

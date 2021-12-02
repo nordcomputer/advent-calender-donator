@@ -71,6 +71,12 @@ if(!isset($_SESSION['user'])) {
         </form>
         <div id="calculate"><?php include_once("alldonations.php"); ?></div>
     </div>
-    <div class="overlay" id="responseoverlay"><div class="response" id="response"></div></div>
+    <div class="overlay" id="responseoverlay"><div class="response" id="response"></div>
+  </div>
+  <div class="license">
+    Dieses Projekt steht unter der MIT Lizens auf <a href="https://github.com/nordcomputer/advent-calender-donator">
+      Github
+    </a> zur Verfügung
+  </div>
   </body>
 </html>

@@ -33,7 +33,11 @@
             </div>
         </div>
       </form>
-
+<div class="license">
+    Dieses Projekt steht unter der MIT Lizens auf <a href="https://github.com/nordcomputer/advent-calender-donator">
+      Github
+    </a> zur Verfügung
+  </div>
     </body>
 
 </html>

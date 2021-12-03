@@ -56,12 +56,12 @@ if(!isset($_SESSION['user'])) {
 
               if ($already!=true && isset($content) && $content!="") {?>
 
-              <label for="radio-<?php echo count($organisations)+1;?>"><span class='orgaspan'>Eigene Organistation angeben</span><i class='fa fa-heart'></i></label>
+              <label for="radio-<?php echo count($organisations)+1;?>"><span class='orgaspan'>Eigene Organisation angeben</span><i class='fa fa-heart'></i></label>
               <input class="radio own" type="radio" value ="own" name="organisation" id="radio-<?php echo count($organisations)+1;?>" checked><br>
               <textarea id="freetext" name="freetext" rows="4" cols="50"><?php echo $content; ?></textarea>
 
             <?php } else { ?>
-              <label for="radio-<?php echo count($organisations)+1;?>"><span class='orgaspan'>Eigene Organistation angeben</span><i class='fa fa-heart'></i></label>
+              <label for="radio-<?php echo count($organisations)+1;?>"><span class='orgaspan'>Eigene Organisation angeben</span><i class='fa fa-heart'></i></label>
               <input class="radio own" type="radio" value ="own" name="organisation" id="radio-<?php echo count($organisations)+1;?>"><br>
               <textarea id="freetext" name="freetext" rows="4" disabled></textarea>
             <?php } ?>

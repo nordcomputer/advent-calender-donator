@@ -19,13 +19,13 @@ $( function() {
       $("#response").addClass("active");
       $("#responseoverlay").addClass('active');
   });
-  $('fieldset').bind('DOMSubtreeModified', function(){
-      var ownorgachecked = $('.own').prop('checked');
-      if (ownorgachecked==true) {
-        $('#freetext').prop('disabled', false);
-      } else {
-        $('#freetext').prop('disabled', true);
-      }
+  $('fieldset').click(function () {
+    var ownorgachecked = $('.own').prop('checked');
+    if (ownorgachecked == true) {
+      $('#freetext').prop('disabled', false);
+    } else {
+      $('#freetext').prop('disabled', true);
+    }
   });
   $("#closeresponse").click(function(){
       $("#response").removeClass('active');
